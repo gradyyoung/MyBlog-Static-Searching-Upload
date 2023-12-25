@@ -1,7 +1,6 @@
 {
   "index_name": "grady-young",
   "start_urls": ["https://www.ygang.top/"],
-  "sitemap_urls": ["https://www.ygang.top/sitemap.xml"],
   "selectors": {
     "lvl0": ".page-title h1",
     "lvl1": "#wirte h2",
@@ -10,67 +9,6 @@
     "lvl4": "#wirte h5",
     "lvl5": "#wirte h6",
     "lvl6": "#wirte h7",
-    "content": "#wirte p,#write blockquote,#write li,#write strong,#write code,#write td"
-  },
-  "custom_settings": {
-    "attributesForFaceting": [
-      "type",
-      "lang",
-      "language",
-      "version",
-      "docusaurus_tag"
-    ],
-    "attributesToRetrieve": [
-      "hierarchy",
-      "content",
-      "anchor",
-      "url",
-      "url_without_anchor",
-      "type"
-    ],
-    "attributesToHighlight": ["hierarchy", "content"],
-    "attributesToSnippet": ["content:10"],
-    "camelCaseAttributes": ["hierarchy", "content"],
-    "searchableAttributes": [
-      "unordered(hierarchy.lvl0)",
-      "unordered(hierarchy.lvl1)",
-      "unordered(hierarchy.lvl2)",
-      "unordered(hierarchy.lvl3)",
-      "unordered(hierarchy.lvl4)",
-      "unordered(hierarchy.lvl5)",
-      "unordered(hierarchy.lvl6)",
-      "content"
-    ],
-    "distinct": true,
-    "attributeForDistinct": "url",
-    "customRanking": [
-      "desc(weight.pageRank)",
-      "desc(weight.level)",
-      "asc(weight.position)"
-    ],
-    "ranking": [
-      "words",
-      "filters",
-      "typo",
-      "attribute",
-      "proximity",
-      "exact",
-      "custom"
-    ],
-    "highlightPreTag": "<span class='algolia-docsearch-suggestion--highlight'>",
-    "highlightPostTag": "</span>",
-    "minWordSizefor1Typo": 3,
-    "minWordSizefor2Typos": 7,
-    "allowTyposOnNumericTokens": false,
-    "minProximity": 1,
-    "ignorePlurals": true,
-    "advancedSyntax": true,
-    "attributeCriteriaComputedByMinProximity": true,
-    "removeWordsIfNoResults": "allOptional",
-    "separatorsToIndex": "_",
-    "synonyms": [
-      ["js", "javascript"],
-      ["ts", "typescript"]
-    ]
+    "text": "#wirte p,#write blockquote,#write li,#write strong,#write code,#write td"
   }
 }
