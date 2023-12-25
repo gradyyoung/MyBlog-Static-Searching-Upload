@@ -15,7 +15,7 @@
     "lvl4": "#wirte h4",
     "lvl5": "#wirte h5",
     "lvl6": "#wirte h6",
-    "text": "#wirte p"
+    "text": "#wirte p,#write blockquote,#write li,#write strong,#write code,#write td"
   },
   "custom_settings": {
     "attributesForFaceting": [
