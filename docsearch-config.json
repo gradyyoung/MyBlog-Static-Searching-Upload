@@ -3,12 +3,12 @@
   "start_urls": ["https://www.ygang.top/"],
   "selectors": {
     "lvl0": ".page-title h1",
-    "lvl1": "#wirte h2",
-    "lvl2": "#wirte h3",
-    "lvl3": "#wirte h4",
-    "lvl4": "#wirte h5",
-    "lvl5": "#wirte h6",
-    "lvl6": "#wirte h7",
-    "text": "#wirte p,#write blockquote,#write li,#write strong,#write code,#write td"
+    "lvl1": "#wirte h2:first-child",
+    "lvl2": "#wirte h3:first-child",
+    "lvl3": "#wirte h4:first-child",
+    "lvl4": "#wirte h5:first-child",
+    "lvl5": "#wirte h6:first-child",
+    "lvl6": "#wirte h7:first-child",
+    "text": "#wirte p:first-child,#write blockquote,#write li,#write strong,#write code,#write td"
   }
 }
