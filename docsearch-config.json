@@ -7,18 +7,16 @@
       "https://www.ygang.top/"
   ],
   "selectors": {
-
-          "lvl0": {
-              "selector": "",
-              "default_value": "文章"
-          },
-          "lvl1": ".page-title h1",
-          "lvl2": ".note-content h2:first-child",
-          "lvl3": ".note-content h3:first-child",
-          "lvl4": ".note-content h4:first-child",
-          "lvl5": ".note-content h5:first-child",
-          "lvl6": ".note-content h6:first-child",
-          "content": ".note-content p,.note-content li"
-      }
-
+    "lvl0": {
+        "selector": "",
+        "default_value": "Notes"
+    },
+    "lvl1": ".page-title h1",
+    "lvl2": ".note-content h2:first-child",
+    "lvl3": ".note-content h3:first-child",
+    "lvl4": ".note-content h4:first-child",
+    "lvl5": ".note-content h5:first-child",
+    "lvl6": ".note-content h6:first-child",
+    "content": ".note-content p,.note-content li"
+  }
 }
