@@ -1,14 +1,48 @@
 {
-  "index_name": "grady-young",
-  "start_urls": ["https://www.ygang.top/"],
+  "index_name": "didilinkin-website",
+  "start_urls": [
+    "https://www.ygang.top/"
+  ],
+  "sitemap_urls": [
+    "https://www.ygang.top/sitemap.xml"
+  ],
+  "sitemap_alternate_links": true,
   "selectors": {
-    "lvl0": ".page-title h1",
-    "lvl1": "#write h2",
-    "lvl2": "#write h3",
-    "lvl3": "#write h4",
-    "lvl4": "#write h5",
-    "lvl5": "#write h6",
-    "lvl6": "#write h7",
-    "text": "#write p,#write blockquote,#write li,#write strong,#write code,#write td"
-  }
+    "lvl0": {
+      "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
+      "type": "xpath",
+      "global": true,
+      "default_value": "Documentation"
+    },
+    "lvl1": ".page-title h1",
+    "lvl2": "#write h2",
+    "lvl3": "#write h3",
+    "lvl4": "#write h4",
+    "lvl5": "#write h5, #write td:first-child",
+    "lvl6": "#write h6",
+    "text": "#write p, #write li, #write td:last-child"
+  },
+  "strip_chars": " .,;:#",
+  "custom_settings": {
+    "separatorsToIndex": "_",
+    "attributesForFaceting": [
+      "language",
+      "version",
+      "type",
+      "docusaurus_tag"
+    ],
+    "attributesToRetrieve": [
+      "hierarchy",
+      "content",
+      "anchor",
+      "url",
+      "url_without_anchor",
+      "type"
+    ]
+  },
+  "js_render": false,
+  "conversation_id": [
+    "833762294"
+  ],
+  "nb_hits": 46250
 }
