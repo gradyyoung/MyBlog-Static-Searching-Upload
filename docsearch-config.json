@@ -7,7 +7,7 @@
       "https://www.ygang.top/"
   ],
   "selectors": {
-      "default": {
+
           "lvl0": {
               "selector": "",
               "default_value": "文章"
@@ -20,5 +20,5 @@
           "lvl6": ".note-content h6:first-child",
           "content": ".note-content p,.note-content li"
       }
-  }
+
 }
