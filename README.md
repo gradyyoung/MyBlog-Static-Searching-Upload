@@ -23,3 +23,4 @@ docker run -it --env-file=.env -e "CONFIG=$(cat docsearch-config.json | jq -r to
 # github action推送
 参考`.github/workflows/MyBlog-Static-Searching-Upload.yml`文件进行配置
 
+ 
